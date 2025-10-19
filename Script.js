@@ -10,13 +10,26 @@ function salvarTarefas() {
     localStorage.setItem("tarefas", JSON.stringify(tarefas));
 }
 
+// Atualizar status da tarefa principal e calcular porcentagem
+function atualizarStatusTarefa(tarefa) {
+    const total = tarefa.subtarefas.length;
+    const concluidas = tarefa.subtarefas.filter(sub => sub.concluida).length;
+
+    // Calcula porcentagem concluída
+    tarefa.porcentagem = total === 0 ? 0 : Math.round((concluidas / total) * 100);
+
+    // Marca tarefa como concluída se 100%
+    tarefa.concluida = tarefa.porcentagem === 100;
+}
+
 // Criar elemento de tarefa
 function criarTarefaElemento(tarefa) {
     const divTarefa = document.createElement("div");
     divTarefa.className = "tarefa";
+    if (tarefa.concluida) divTarefa.classList.add("concluida");
 
     const h3 = document.createElement("h3");
-    h3.textContent = tarefa.titulo;
+    h3.textContent = `${tarefa.titulo} (${tarefa.porcentagem || 0}%)`;
 
     const p = document.createElement("p");
     p.textContent = tarefa.descricao;
@@ -99,11 +112,6 @@ function criarTarefaElemento(tarefa) {
     return divTarefa;
 }
 
-// Atualizar status da tarefa principal
-function atualizarStatusTarefa(tarefa) {
-    tarefa.concluida = tarefa.subtarefas.length > 0 && tarefa.subtarefas.every(sub => sub.concluida);
-}
-
 // Renderizar tarefas
 function renderizarTarefas() {
     listaTarefas.innerHTML = "";
@@ -121,7 +129,8 @@ btnAdicionar.onclick = () => {
         titulo: tituloTarefa.value,
         descricao: descricaoTarefa.value,
         subtarefas: [],
-        concluida: false
+        concluida: false,
+        porcentagem: 0
     };
 
     tarefas.push(novaTarefa);
@@ -132,4 +141,5 @@ btnAdicionar.onclick = () => {
     descricaoTarefa.value = "";
 };
 
-//
+// Renderiza ao iniciar
+renderizarTarefas();

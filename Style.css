@@ -146,3 +146,9 @@ button.remove-tarefa:hover, button.remove-subtarefa:hover {
 .add-subtarefa button:hover {
     background-color: #1e8449;
 }
+
+.tarefa.concluida {
+    background-color: #2ecc71; /* verde quando todas as subtarefas forem concluídas */
+    color: #fff;
+    transition: background 0.3s;
+}
