@@ -10,7 +10,6 @@ Criar um sistema que permita gerenciar tarefas de forma dinâmica e organizada, 
 🔄 Atualizar o status das tarefas automaticamente conforme as subtarefas são concluídas
 🗑️ Excluir tarefas e subtarefas
 📋 Listar todas as tarefas cadastradas
-📊 Organizar tarefas visualmente em um Kanban (To Do, In Progress, Done, Cancelado)
 
 🛠️ Tecnologias Utilizadas
 
