@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gerenciador de Tarefas</title>
-    <link rel="stylesheet" href="Style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas Ágil</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="container">
         <h1>Gerenciador de Tarefas Ágil</h1>
 
+        <!-- Área de adicionar tarefa -->
         <div class="add-tarefa">
             <input type="text" id="titulo-tarefa" placeholder="Título da Tarefa">
             <input type="text" id="descricao-tarefa" placeholder="Descrição da Tarefa">
             <button id="btn-adicionar">Adicionar Tarefa</button>
         </div>
-        <div id="tarefas"></div>
+
+        <!-- Lista de tarefas -->
+        <div id="lista-tarefas"></div>
     </div>
 
-
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
