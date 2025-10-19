@@ -1,24 +1,22 @@
-# 🚀 Projeto Ágil - Sistema de Gerenciamento de Tarefas
+🚀 Projeto Ágil - Sistema de Gerenciamento de Tarefas
+🎓 Universidade UNIFECAF
 
-## 🎓 Universidade UNIFECAF
+Projeto desenvolvido como parte da disciplina de Engenharia de Software, com o objetivo de aplicar metodologias ágeis, versionamento de código (Git/GitHub) e desenvolvimento front-end utilizando HTML, CSS e JavaScript, mantendo todas as funcionalidades essenciais do sistema sem necessidade de back-end.
 
-Projeto desenvolvido como parte da disciplina de **Engenharia de Software**, com o objetivo de aplicar **metodologias ágeis**, **versionamento de código (Git/GitHub)** e **integração entre front-end e back-end** utilizando **HTML, CSS, JavaScript, PHP e MySQL**.
+🧠 Objetivo do Sistema
+Criar um sistema que permita gerenciar tarefas de forma dinâmica e organizada, permitindo:
 
----
+✅ Cadastrar novas tarefas e subtarefas
+🔄 Atualizar o status das tarefas automaticamente conforme as subtarefas são concluídas
+🗑️ Excluir tarefas e subtarefas
+📋 Listar todas as tarefas cadastradas
+📊 Organizar tarefas visualmente em um Kanban (To Do, In Progress, Done, Cancelado)
 
-## 🧠 Objetivo do Sistema
-Criar um sistema que permita **gerenciar tarefas em tempo real**, permitindo:
-- ✅ Cadastrar novas tarefas
-- 🔄 Atualizar o status
-- 🗑️ Excluir tarefas
-- 📋 Listar todas as tarefas cadastradas
+🛠️ Tecnologias Utilizadas
 
----
+HTML5 / CSS3 / JavaScript (Front-end e armazenamento de dados local)
 
-## 🛠️ Tecnologias Utilizadas
-- **HTML5 / CSS3 / JavaScript**
-- **PHP (Back-end)**
-- **MySQL (Banco de Dados)**
-- **Git e GitHub (Versionamento)**
-- **Kanban (Metodologia Ágil)**
+Git e GitHub (Versionamento de código e Kanban integrado)
+
+Kanban (Metodologia Ágil para organização do projeto)
 
