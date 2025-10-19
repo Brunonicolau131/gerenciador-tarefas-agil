@@ -1,0 +1,67 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px 0;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+
+h1 {
+    text-align: center;
+    color: #2c3e50; 
+    margin-bottom: 30px;
+}
+
+.add-tarefa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.add-tarefa input {
+    width: 65%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #3498db; 
+    font-size: 16px;
+    text-align: center;
+    margin-right: 10px;
+    transition: border 0.3s;
+}
+
+.add-tarefa input:focus {
+    border-color: #1abc9c; 
+    outline: none;
+}
+
+
+.add-tarefa button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #e67e22; 
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.add-tarefa button:hover {
+    background-color: #d35400; 
+}
+
+
